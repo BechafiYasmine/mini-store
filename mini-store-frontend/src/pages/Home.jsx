@@ -23,10 +23,11 @@ export default function Home() {
     <div>
       <h1>All Products</h1>
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-        {products.map(p => (
-          <ProductCard key={p.id} product={p} onDelete={deleteProduct} />
-        ))}
-      </div>
+  {products.map(p => (
+    <ProductCard key={p.id} product={p} onDelete={deleteProduct} />
+  ))}
+</div>
+
     </div>
   );
 }
