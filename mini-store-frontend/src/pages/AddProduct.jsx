@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import ProductForm from '../components/ProductForm';
+import '../App.css';
 
 export default function AddProduct() {
   const [form, setForm] = useState({ name: '', description: '', price: '', image_url: '' });
